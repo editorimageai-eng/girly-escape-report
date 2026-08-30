@@ -47,67 +47,100 @@
   .hint { background:var(--card); border:1px solid var(--line); border-left:3px solid var(--accent);
     border-radius:8px; padding:12px 15px; margin:10px 0 0; font-size:.86rem; color:var(--muted); }
   footer { margin-top:40px; color:var(--muted); font-size:.8rem; line-height:1.7; }
+  .filters { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:0 0 10px; }
+  .chip { font:inherit; font-size:.82rem; padding:5px 11px; border-radius:999px;
+    border:1px solid var(--line); background:var(--card); color:var(--ink); cursor:pointer; }
+  .chip span { color:var(--muted); margin-left:5px; font-variant-numeric:tabular-nums; }
+  .chip:hover { border-color:var(--accent); }
+  .chip.active { background:var(--accent); border-color:var(--accent); color:#fff; }
+  .chip.active span { color:rgb(255 255 255 / 75%); }
+  .toggle { font-size:.82rem; color:var(--muted); display:flex; align-items:center; gap:6px; cursor:pointer; }
+  #label-search { font:inherit; font-size:.82rem; padding:5px 11px; border-radius:999px;
+    border:1px solid var(--line); background:var(--card); color:var(--ink); min-width:150px; }
+  .empty { padding:14px; margin:0; font-size:.86rem; }
 </style></head><body><div class="wrap">
 
 <header>
   <h1>Girly Escape to the Blue — analytics</h1>
-  <p>Updated 30 Aug 2026, 16:57 Yerevan time · refreshes every 4 hours ·
-     317 days until the trip</p>
+  <p>Updated 06 Sep 2026, 04:15 Yerevan time · refreshes every 15 minutes ·
+     306 days until the trip</p>
 </header>
 
 <div class="cards">
-  <div class="card"><b>9</b><small>visitors today · no data for yesterday</small></div>
-  <div class="card"><b>9</b><small>first-time today</small></div>
+  <div class="card"><b>7</b><small>visitors today · ▼ 85% vs yesterday</small></div>
+  <div class="card"><b>7</b><small>first-time today</small></div>
   <div class="card"><b>0</b><small>returning today</small></div>
-  <div class="card"><b>9</b><small>last 7 days</small></div>
-  <div class="card"><b>9</b><small>all time</small></div>
-  <div class="card"><b>23m 51s</b><small>average time on page</small></div>
-  <div class="card"><b>2</b><small>reached the price</small></div>
-  <div class="card"><b>2</b><small>tapped Instagram</small></div>
+  <div class="card"><b>411</b><small>last 7 days</small></div>
+  <div class="card"><b>425</b><small>all time</small></div>
+  <div class="card"><b>4m 12s</b><small>average time on page</small></div>
+  <div class="card"><b>318</b><small>reached the price</small></div>
+  <div class="card"><b>39</b><small>tapped Instagram</small></div>
 </div>
 
 <h2>Visitors per day <span>· last 14 days</span></h2>
-<div class="panel"><div class="chart"><div class='day'><i style='height:100%' title='2026-08-30: 9'></i><small>08-30</small><b>9</b></div></div></div>
+<div class="panel"><div class="chart"><div class='day'><i style='height:7%' title='2026-08-30: 18'></i><small>08-30</small><b>18</b></div><div class='day'><i style='height:100%' title='2026-08-31: 265'></i><small>08-31</small><b>265</b></div><div class='day'><i style='height:27%' title='2026-09-01: 71'></i><small>09-01</small><b>71</b></div><div class='day'><i style='height:7%' title='2026-09-02: 18'></i><small>09-02</small><b>18</b></div><div class='day'><i style='height:4%' title='2026-09-03: 10'></i><small>09-03</small><b>10</b></div><div class='day'><i style='height:4%' title='2026-09-04: 11'></i><small>09-04</small><b>11</b></div><div class='day'><i style='height:18%' title='2026-09-05: 47'></i><small>09-05</small><b>47</b></div><div class='day'><i style='height:3%' title='2026-09-06: 7'></i><small>09-06</small><b>7</b></div></div></div>
 
 <h2>How far people get <span>· all time</span></h2>
 <div class="panel scroll"><table>
 <tr><th>Step</th><th class="n">People</th><th class="n">Lost</th><th>Share of visitors</th></tr>
-<tr><td>Opened the page</td><td class='n'>9</td><td class='n muted'></td><td class='bar'><i style='width:100%'></i><span>100%</span></td></tr><tr><td>Scrolled 25%</td><td class='n'>4</td><td class='n muted'>−5</td><td class='bar'><i style='width:44%'></i><span>44%</span></td></tr><tr><td>Scrolled halfway</td><td class='n'>4</td><td class='n muted'>0</td><td class='bar'><i style='width:44%'></i><span>44%</span></td></tr><tr><td>Scrolled 75%</td><td class='n'>2</td><td class='n muted'>−2</td><td class='bar'><i style='width:22%'></i><span>22%</span></td></tr><tr><td>Reached the price</td><td class='n'>2</td><td class='n muted'>0</td><td class='bar'><i style='width:22%'></i><span>22%</span></td></tr><tr><td>Tapped “write to us”</td><td class='n'>2</td><td class='n muted'>0</td><td class='bar'><i style='width:22%'></i><span>22%</span></td></tr></table></div>
+<tr><td>Opened the page</td><td class='n'>425</td><td class='n muted'></td><td class='bar'><i style='width:100%'></i><span>100%</span></td></tr><tr><td>Scrolled 25%</td><td class='n'>360</td><td class='n muted'>−65</td><td class='bar'><i style='width:85%'></i><span>85%</span></td></tr><tr><td>Scrolled halfway</td><td class='n'>347</td><td class='n muted'>−13</td><td class='bar'><i style='width:82%'></i><span>82%</span></td></tr><tr><td>Scrolled 75%</td><td class='n'>330</td><td class='n muted'>−17</td><td class='bar'><i style='width:78%'></i><span>78%</span></td></tr><tr><td>Reached the price</td><td class='n'>318</td><td class='n muted'>−12</td><td class='bar'><i style='width:75%'></i><span>75%</span></td></tr><tr><td>Tapped “write to us”</td><td class='n'>39</td><td class='n muted'>−279</td><td class='bar'><i style='width:9%'></i><span>9%</span></td></tr></table></div>
 
 <h2>How far people get <span>· today</span></h2>
 <div class="panel scroll"><table>
 <tr><th>Step</th><th class="n">People</th><th class="n">Lost</th><th>Share of visitors</th></tr>
-<tr><td>Opened the page</td><td class='n'>9</td><td class='n muted'></td><td class='bar'><i style='width:100%'></i><span>100%</span></td></tr><tr><td>Scrolled 25%</td><td class='n'>4</td><td class='n muted'>−5</td><td class='bar'><i style='width:44%'></i><span>44%</span></td></tr><tr><td>Scrolled halfway</td><td class='n'>4</td><td class='n muted'>0</td><td class='bar'><i style='width:44%'></i><span>44%</span></td></tr><tr><td>Scrolled 75%</td><td class='n'>2</td><td class='n muted'>−2</td><td class='bar'><i style='width:22%'></i><span>22%</span></td></tr><tr><td>Reached the price</td><td class='n'>2</td><td class='n muted'>0</td><td class='bar'><i style='width:22%'></i><span>22%</span></td></tr><tr><td>Tapped “write to us”</td><td class='n'>2</td><td class='n muted'>0</td><td class='bar'><i style='width:22%'></i><span>22%</span></td></tr></table></div>
+<tr><td>Opened the page</td><td class='n'>7</td><td class='n muted'></td><td class='bar'><i style='width:100%'></i><span>100%</span></td></tr><tr><td>Scrolled 25%</td><td class='n'>6</td><td class='n muted'>−1</td><td class='bar'><i style='width:86%'></i><span>86%</span></td></tr><tr><td>Scrolled halfway</td><td class='n'>6</td><td class='n muted'>0</td><td class='bar'><i style='width:86%'></i><span>86%</span></td></tr><tr><td>Scrolled 75%</td><td class='n'>6</td><td class='n muted'>0</td><td class='bar'><i style='width:86%'></i><span>86%</span></td></tr><tr><td>Reached the price</td><td class='n'>6</td><td class='n muted'>0</td><td class='bar'><i style='width:86%'></i><span>86%</span></td></tr><tr><td>Tapped “write to us”</td><td class='n'>1</td><td class='n muted'>−5</td><td class='bar'><i style='width:14%'></i><span>14%</span></td></tr></table></div>
 
-<h2>Where visitors came from <span>· every label you send</span></h2>
+<h2>Channels at a glance <span>· one row per utm_source</span></h2>
 <div class="panel scroll"><table>
+<tr><th>Source</th><th class="n">People</th><th class="n">To price</th>
+<th class="n">Tapped</th><th class="n">Conv.</th><th class="n">Labels</th></tr>
+<tr><td><code>ig</code></td><td class='n'>266</td><td class='n'>212</td><td class='n'>27</td><td class='n muted'>10%</td><td class='n muted'>4</td></tr><tr><td><code>(direct)</code></td><td class='n'>166</td><td class='n'>112</td><td class='n'>11</td><td class='n muted'>7%</td><td class='n muted'>0</td></tr><tr><td><code>--sanitized--</code></td><td class='n'>7</td><td class='n'>0</td><td class='n'>0</td><td class='n muted'>0%</td><td class='n muted'>1</td></tr><tr><td><code>tt</code></td><td class='n'>1</td><td class='n'>1</td><td class='n'>1</td><td class='n muted'>100%</td><td class='n muted'>2</td></tr></table></div>
+
+<h2>Every label you send <span>· filter by channel</span></h2>
+<div class="filters">
+  <button class="chip active" data-source="*">All <span>8</span></button>
+  <button class='chip' data-source="ig">ig <span>266</span></button><button class='chip' data-source="(direct)">(direct) <span>166</span></button><button class='chip' data-source="--sanitized--">--sanitized-- <span>7</span></button><button class='chip' data-source="tt">tt <span>1</span></button>
+  <label class="toggle"><input type="checkbox" id="repeat-only"> Only labels with 2+ visitors</label>
+  <input type="search" id="label-search" placeholder="Search a label…">
+</div>
+<div class="panel scroll"><table id="labels">
 <tr><th>utm_source</th><th>utm_medium</th><th>utm_campaign</th><th>utm_content</th>
 <th class="n">People</th><th class="n">To price</th><th class="n">Tapped</th>
 <th class="n">Conv.</th><th>Last visit</th></tr>
-<tr><td><code>(direct)</code></td><td><code>—</code></td><td><code>—</code></td><td><b>—</b></td><td class='n'>6</td><td class='n'>2</td><td class='n'>2</td><td class='n muted'>33%</td><td class='muted'>2026-08-30 12:56</td></tr><tr><td><code>ig</code></td><td><code>—</code></td><td><code>—</code></td><td><b>anna</b></td><td class='n'>2</td><td class='n'>0</td><td class='n'>0</td><td class='n muted'>0%</td><td class='muted'>2026-08-30 12:57</td></tr><tr><td><code>ig</code></td><td><code>dm</code></td><td><code>—</code></td><td><b>test</b></td><td class='n'>1</td><td class='n'>0</td><td class='n'>0</td><td class='n muted'>0%</td><td class='muted'>2026-08-30 12:07</td></tr></table></div>
+<tr data-source="ig" data-people="243"><td><code>ig</code></td><td><code>social</code></td><td><code>—</code></td><td><b>link_in_bio</b></td><td class='n'>243</td><td class='n'>194</td><td class='n'>26</td><td class='n muted'>11%</td><td class='muted'>2026-09-05 22:11</td></tr><tr data-source="(direct)" data-people="166"><td><code>(direct)</code></td><td><code>—</code></td><td><code>—</code></td><td><b>—</b></td><td class='n'>166</td><td class='n'>112</td><td class='n'>11</td><td class='n muted'>7%</td><td class='muted'>2026-09-02 19:24</td></tr><tr data-source="ig" data-people="23"><td><code>ig</code></td><td><code>—</code></td><td><code>—</code></td><td><b>anna</b></td><td class='n'>23</td><td class='n'>18</td><td class='n'>1</td><td class='n muted'>4%</td><td class='muted'>2026-09-01 08:13</td></tr><tr data-source="--sanitized--" data-people="7"><td><code>--sanitized--</code></td><td><code>--sanitized--</code></td><td><code>—</code></td><td><b>--sanitized--</b></td><td class='n'>7</td><td class='n'>0</td><td class='n'>0</td><td class='n muted'>0%</td><td class='muted'>2026-09-01 16:00</td></tr><tr data-source="ig" data-people="2"><td><code>ig</code></td><td><code>dm</code></td><td><code>—</code></td><td><b>test</b></td><td class='n'>2</td><td class='n'>0</td><td class='n'>0</td><td class='n muted'>0%</td><td class='muted'>2026-08-30 14:44</td></tr><tr data-source="ig" data-people="1"><td><code>ig</code></td><td><code>—</code></td><td><code>—</code></td><td><b>vahe</b></td><td class='n'>1</td><td class='n'>0</td><td class='n'>0</td><td class='n muted'>0%</td><td class='muted'>2026-08-31 17:00</td></tr><tr data-source="tt" data-people="1"><td><code>tt</code></td><td><code>—</code></td><td><code>—</code></td><td><b>vahe</b></td><td class='n'>1</td><td class='n'>1</td><td class='n'>0</td><td class='n muted'>0%</td><td class='muted'>2026-08-30 19:14</td></tr><tr data-source="tt" data-people="1"><td><code>tt</code></td><td><code>—</code></td><td><code>—</code></td><td><b>vah</b></td><td class='n'>1</td><td class='n'>1</td><td class='n'>1</td><td class='n muted'>100%</td><td class='muted'>2026-08-31 18:59</td></tr></table>
+<p class="empty muted" hidden>Nothing matches this filter.</p></div>
 <p class="hint">Send each link with its own label, e.g.
 <code>?utm_source=ig&amp;utm_content=a7</code>, and every recipient gets their own row here —
 including whether they reached the price. Links without labels are grouped as <code>(direct)</code>.</p>
 
 <h2>Time of day <span>· Yerevan hours, all time</span></h2>
-<div class="panel"><div class="chart"><div class='hour'><i style='height:62%' title='15:00 — 5'></i><small>15</small></div><div class='hour'><i style='height:100%' title='16:00 — 8'></i><small>16</small></div></div></div>
+<div class="panel"><div class="chart"><div class='hour'><i style='height:20%' title='0:00 — 17'></i><small>0</small></div><div class='hour'><i style='height:16%' title='1:00 — 13'></i><small>1</small></div><div class='hour'><i style='height:12%' title='2:00 — 10'></i><small>2</small></div><div class='hour'><i style='height:5%' title='3:00 — 4'></i><small>3</small></div><div class='hour'><i style='height:3%' title='4:00 — 1'></i><small>4</small></div><div class='hour'><i style='height:3%' title='5:00 — 1'></i><small>5</small></div><div class='hour'><i style='height:5%' title='6:00 — 4'></i><small>6</small></div><div class='hour'><i style='height:8%' title='7:00 — 7'></i><small>7</small></div><div class='hour'><i style='height:7%' title='8:00 — 6'></i><small>8</small></div><div class='hour'><i style='height:23%' title='9:00 — 19'></i><small>9</small></div><div class='hour'><i style='height:28%' title='10:00 — 23'></i><small>10</small></div><div class='hour'><i style='height:100%' title='11:00 — 83'></i><small>11</small></div><div class='hour'><i style='height:60%' title='12:00 — 50'></i><small>12</small></div><div class='hour'><i style='height:48%' title='13:00 — 40'></i><small>13</small></div><div class='hour'><i style='height:35%' title='14:00 — 29'></i><small>14</small></div><div class='hour'><i style='height:30%' title='15:00 — 25'></i><small>15</small></div><div class='hour'><i style='height:36%' title='16:00 — 30'></i><small>16</small></div><div class='hour'><i style='height:40%' title='17:00 — 33'></i><small>17</small></div><div class='hour'><i style='height:22%' title='18:00 — 18'></i><small>18</small></div><div class='hour'><i style='height:33%' title='19:00 — 27'></i><small>19</small></div><div class='hour'><i style='height:39%' title='20:00 — 32'></i><small>20</small></div><div class='hour'><i style='height:31%' title='21:00 — 26'></i><small>21</small></div><div class='hour'><i style='height:31%' title='22:00 — 26'></i><small>22</small></div><div class='hour'><i style='height:22%' title='23:00 — 18'></i><small>23</small></div></div></div>
 
 <h2>Recent taps on the Instagram button</h2>
 <div class="panel scroll"><table>
 <tr><th>When</th><th>Label</th><th>Position on page</th><th>Country</th></tr>
-<tr><td>2026-08-30 16:15</td><td><b>(no label)</b></td><td>footer</td><td>Armenia</td></tr><tr><td>2026-08-30 15:38</td><td><b>(no label)</b></td><td>footer</td><td>Armenia</td></tr></table></div>
+<tr><td>2026-09-06 02:11</td><td><b>link_in_bio</b></td><td>floating_navigation</td><td>Belgium</td></tr><tr><td>2026-09-05 17:07</td><td><b>link_in_bio</b></td><td>footer</td><td>Armenia</td></tr><tr><td>2026-09-05 10:33</td><td><b>link_in_bio</b></td><td>hero</td><td>Armenia</td></tr><tr><td>2026-09-05 03:22</td><td><b>link_in_bio</b></td><td>footer</td><td>Armenia</td></tr><tr><td>2026-09-04 14:58</td><td><b>link_in_bio</b></td><td>floating_navigation</td><td>Armenia</td></tr><tr><td>2026-09-04 14:58</td><td><b>link_in_bio</b></td><td>floating_navigation</td><td>Armenia</td></tr><tr><td>2026-09-04 14:57</td><td><b>link_in_bio</b></td><td>floating_navigation</td><td>Armenia</td></tr><tr><td>2026-09-04 14:57</td><td><b>link_in_bio</b></td><td>hero</td><td>Armenia</td></tr><tr><td>2026-09-03 19:18</td><td><b>link_in_bio</b></td><td>hero</td><td>France</td></tr><tr><td>2026-09-03 00:31</td><td><b>link_in_bio</b></td><td>hero</td><td>Canada</td></tr><tr><td>2026-09-01 16:01</td><td><b>link_in_bio</b></td><td>floating_navigation</td><td>Armenia</td></tr><tr><td>2026-09-01 14:42</td><td><b>(no label)</b></td><td>hero</td><td>Armenia</td></tr><tr><td>2026-09-01 14:21</td><td><b>link_in_bio</b></td><td>hero</td><td>Armenia</td></tr><tr><td>2026-09-01 09:06</td><td><b>(no label)</b></td><td>floating_navigation</td><td>Armenia</td></tr><tr><td>2026-09-01 07:09</td><td><b>link_in_bio</b></td><td>hero</td><td>United States</td></tr></table></div>
+
+<h2>Reading language <span>· what visitors actually saw</span></h2>
+<div class="panel scroll"><table>
+<tr><th>Language</th><th class="n">People</th><th class="n">To price</th>
+<th class="n">Tapped</th><th class="n">Conv.</th></tr>
+<tr><td>unknown</td><td class='n'>418</td><td class='n'>6</td><td class='n'>2</td><td class='n muted'>0%</td></tr><tr><td>Armenian</td><td class='n'>408</td><td class='n'>310</td><td class='n'>38</td><td class='n muted'>9%</td></tr><tr><td>English</td><td class='n'>18</td><td class='n'>8</td><td class='n'>1</td><td class='n muted'>6%</td></tr><tr><td>Russian</td><td class='n'>3</td><td class='n'>0</td><td class='n'>0</td><td class='n muted'>0%</td></tr></table></div>
+<p class="hint">Armenian is the default; English and Russian appear automatically for
+visitors whose browser asks for them, and anyone can switch with the picker.
+The picker was used 115 times so far.</p>
 
 <h2>Devices</h2>
-<div class="panel scroll"><table><tr><td>unknown</td><td class='n'>9</td><td class='bar'><i style='width:100%'></i></td></tr><tr><td>desktop</td><td class='n'>2</td><td class='bar'><i style='width:22%'></i></td></tr><tr><td>mobile</td><td class='n'>2</td><td class='bar'><i style='width:22%'></i></td></tr></table></div>
+<div class="panel scroll"><table><tr><td>unknown</td><td class='n'>425</td><td class='bar'><i style='width:100%'></i></td></tr><tr><td>mobile</td><td class='n'>395</td><td class='bar'><i style='width:93%'></i></td></tr><tr><td>desktop</td><td class='n'>23</td><td class='bar'><i style='width:5%'></i></td></tr></table></div>
 
 <h2>Countries</h2>
-<div class="panel scroll"><table><tr><td>Armenia</td><td class='n'>8</td><td class='bar'><i style='width:100%'></i></td></tr><tr><td>United States</td><td class='n'>1</td><td class='bar'><i style='width:12%'></i></td></tr></table></div>
+<div class="panel scroll"><table><tr><td>Armenia</td><td class='n'>349</td><td class='bar'><i style='width:100%'></i></td></tr><tr><td>United States</td><td class='n'>27</td><td class='bar'><i style='width:8%'></i></td></tr><tr><td>France</td><td class='n'>8</td><td class='bar'><i style='width:2%'></i></td></tr><tr><td>United Kingdom</td><td class='n'>6</td><td class='bar'><i style='width:2%'></i></td></tr><tr><td>Germany</td><td class='n'>6</td><td class='bar'><i style='width:2%'></i></td></tr><tr><td>The Netherlands</td><td class='n'>4</td><td class='bar'><i style='width:1%'></i></td></tr><tr><td>Cyprus</td><td class='n'>2</td><td class='bar'><i style='width:1%'></i></td></tr><tr><td>Spain</td><td class='n'>2</td><td class='bar'><i style='width:1%'></i></td></tr><tr><td>Greece</td><td class='n'>2</td><td class='bar'><i style='width:1%'></i></td></tr><tr><td>Egypt</td><td class='n'>2</td><td class='bar'><i style='width:1%'></i></td></tr><tr><td>Sweden</td><td class='n'>2</td><td class='bar'><i style='width:1%'></i></td></tr><tr><td>Belgium</td><td class='n'>2</td><td class='bar'><i style='width:1%'></i></td></tr></table></div>
 
 <h2>Browsers</h2>
-<div class="panel scroll"><table><tr><td>Chrome</td><td class='n'>6</td><td class='bar'><i style='width:100%'></i></td></tr><tr><td>Mobile Safari</td><td class='n'>2</td><td class='bar'><i style='width:33%'></i></td></tr><tr><td>unknown</td><td class='n'>1</td><td class='bar'><i style='width:17%'></i></td></tr><tr><td>Chrome iOS</td><td class='n'>1</td><td class='bar'><i style='width:17%'></i></td></tr></table></div>
+<div class="panel scroll"><table><tr><td>Mobile Safari</td><td class='n'>324</td><td class='bar'><i style='width:100%'></i></td></tr><tr><td>Chrome</td><td class='n'>83</td><td class='bar'><i style='width:26%'></i></td></tr><tr><td>Chrome iOS</td><td class='n'>9</td><td class='bar'><i style='width:3%'></i></td></tr><tr><td>unknown</td><td class='n'>7</td><td class='bar'><i style='width:2%'></i></td></tr><tr><td>Safari</td><td class='n'>2</td><td class='bar'><i style='width:1%'></i></td></tr><tr><td>Microsoft Edge</td><td class='n'>2</td><td class='bar'><i style='width:1%'></i></td></tr><tr><td>Samsung Internet</td><td class='n'>1</td><td class='bar'><i style='width:0%'></i></td></tr></table></div>
 
 <h2>Hero slides watched</h2>
-<div class="panel scroll"><table><tr><td>Frame 1.0 — —</td><td class='n'>6</td></tr><tr><td>Frame 2.0 — —</td><td class='n'>5</td></tr><tr><td>Frame 3.0 — —</td><td class='n'>4</td></tr></table></div>
+<div class="panel scroll"><table><tr><td>Frame 1.0 — —</td><td class='n'>417</td></tr><tr><td>Frame 2.0 — —</td><td class='n'>381</td></tr><tr><td>Frame 3.0 — —</td><td class='n'>368</td></tr></table></div>
 
 <footer>
   Source: PostHog (EU) · page: <a href="https://girly-escape-to-the-blue.aiall.uk">girly-escape-to-the-blue.aiall.uk</a><br>
@@ -115,4 +148,42 @@ including whether they reached the price. Links without labels are grouped as <c
   “Reached the price” fires when the pricing block scrolls into view.<br>
   This page is public to anyone holding the link — it shows aggregate numbers only, never personal data.
 </footer>
-</div></body></html>
+</div>
+<script>
+(function () {
+  var table = document.getElementById('labels');
+  if (!table) return;
+  var rows = Array.prototype.slice.call(table.querySelectorAll('tr[data-source]'));
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+  var repeatOnly = document.getElementById('repeat-only');
+  var search = document.getElementById('label-search');
+  var empty = document.querySelector('.empty');
+  var source = '*';
+
+  function apply() {
+    var needle = (search.value || '').toLowerCase();
+    var shown = 0;
+    rows.forEach(function (row) {
+      var matchesSource = source === '*' || row.dataset.source === source;
+      var matchesRepeat = !repeatOnly.checked || Number(row.dataset.people) > 1;
+      var matchesText = !needle || row.textContent.toLowerCase().indexOf(needle) !== -1;
+      var visible = matchesSource && matchesRepeat && matchesText;
+      row.hidden = !visible;
+      if (visible) shown++;
+    });
+    empty.hidden = shown > 0;
+  }
+
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      chips.forEach(function (other) { other.classList.remove('active'); });
+      chip.classList.add('active');
+      source = chip.dataset.source;
+      apply();
+    });
+  });
+  repeatOnly.addEventListener('change', apply);
+  search.addEventListener('input', apply);
+})();
+</script>
+</body></html>
