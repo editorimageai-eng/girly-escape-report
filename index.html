@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Analytics · Girly Escape to the Blue</title>
+<style>
+  :root { color-scheme: light dark; --ink:#0f1c1e; --bg:#f4f2ed; --card:#fff;
+    --line:#ddd7cb; --muted:#6d7a75; --accent:#4a6fa5; --good:#3f7d55; }
+  :root:not([data-theme="light"]) { }
+  @media (prefers-color-scheme: dark) { :root { --ink:#e8e5de; --bg:#0e1315;
+    --card:#151c1f; --line:#28322f; --muted:#94a39e; --accent:#8fb0d8; --good:#7fb894; } }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:28px 18px 64px; background:var(--bg); color:var(--ink);
+    font:15px/1.55 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; }
+  .wrap { max-width:1080px; margin:0 auto; }
+  header h1 { font-size:1.55rem; margin:0 0 2px; letter-spacing:-.02em; }
+  header p { margin:0 0 26px; color:var(--muted); font-size:.9rem; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(158px,1fr));
+    gap:12px; margin-bottom:30px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; }
+  .card b { display:block; font-size:1.85rem; font-weight:600; letter-spacing:-.03em; }
+  .card small { display:block; color:var(--muted); margin-top:3px; font-size:.82rem; }
+  h2 { font-size:1rem; margin:32px 0 10px; letter-spacing:-.01em; }
+  h2 span { color:var(--muted); font-weight:400; font-size:.85rem; }
+  .panel { background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+  .scroll { overflow-x:auto; }
+  table { width:100%; border-collapse:collapse; min-width:min-content; }
+  td, th { padding:8px 13px; text-align:left; border-bottom:1px solid var(--line);
+    font-size:.88rem; white-space:nowrap; }
+  tr:last-child td { border-bottom:0; }
+  th { color:var(--muted); font-weight:500; font-size:.74rem; text-transform:uppercase;
+    letter-spacing:.07em; }
+  .n { text-align:right; font-variant-numeric:tabular-nums; }
+  .muted { color:var(--muted); }
+  code { font:.82rem ui-monospace,SFMono-Regular,Menlo,monospace; color:var(--muted); }
+  .bar { position:relative; min-width:120px; width:34%; }
+  .bar i { display:block; height:7px; background:var(--accent); border-radius:4px; opacity:.85; }
+  .bar span { position:absolute; right:13px; top:4px; font-size:.75rem; color:var(--muted); }
+  .chart { display:flex; align-items:flex-end; gap:5px; height:140px; padding:16px 14px 8px; }
+  .day, .hour { flex:1; display:flex; flex-direction:column; justify-content:flex-end;
+    align-items:center; height:100%; }
+  .day i, .hour i { width:100%; max-width:34px; background:var(--accent); border-radius:4px 4px 0 0;
+    opacity:.85; }
+  .day small, .hour small { font-size:.68rem; color:var(--muted); margin-top:5px; }
+  .day b { font-size:.72rem; font-weight:600; }
+  .hint { background:var(--card); border:1px solid var(--line); border-left:3px solid var(--accent);
+    border-radius:8px; padding:12px 15px; margin:10px 0 0; font-size:.86rem; color:var(--muted); }
+  footer { margin-top:40px; color:var(--muted); font-size:.8rem; line-height:1.7; }
+</style></head><body><div class="wrap">
+
+<header>
+  <h1>Girly Escape to the Blue — analytics</h1>
+  <p>Updated 30 Aug 2026, 16:44 Yerevan time · refreshes every 4 hours ·
+     317 days until the trip</p>
+</header>
+
+<div class="cards">
+  <div class="card"><b>9</b><small>visitors today · no data for yesterday</small></div>
+  <div class="card"><b>9</b><small>first-time today</small></div>
+  <div class="card"><b>0</b><small>returning today</small></div>
+  <div class="card"><b>9</b><small>last 7 days</small></div>
+  <div class="card"><b>9</b><small>all time</small></div>
+  <div class="card"><b>21m 24s</b><small>average time on page</small></div>
+  <div class="card"><b>2</b><small>reached the price</small></div>
+  <div class="card"><b>2</b><small>tapped Instagram</small></div>
+</div>
+
+<h2>Visitors per day <span>· last 14 days</span></h2>
+<div class="panel"><div class="chart"><div class='day'><i style='height:100%' title='2026-08-30: 9'></i><small>08-30</small><b>9</b></div></div></div>
+
+<h2>How far people get <span>· all time</span></h2>
+<div class="panel scroll"><table>
+<tr><th>Step</th><th class="n">People</th><th class="n">Lost</th><th>Share of visitors</th></tr>
+<tr><td>Opened the page</td><td class='n'>9</td><td class='n muted'></td><td class='bar'><i style='width:100%'></i><span>100%</span></td></tr><tr><td>Scrolled 25%</td><td class='n'>4</td><td class='n muted'>−5</td><td class='bar'><i style='width:44%'></i><span>44%</span></td></tr><tr><td>Scrolled halfway</td><td class='n'>4</td><td class='n muted'>0</td><td class='bar'><i style='width:44%'></i><span>44%</span></td></tr><tr><td>Scrolled 75%</td><td class='n'>2</td><td class='n muted'>−2</td><td class='bar'><i style='width:22%'></i><span>22%</span></td></tr><tr><td>Reached the price</td><td class='n'>2</td><td class='n muted'>0</td><td class='bar'><i style='width:22%'></i><span>22%</span></td></tr><tr><td>Tapped “write to us”</td><td class='n'>2</td><td class='n muted'>0</td><td class='bar'><i style='width:22%'></i><span>22%</span></td></tr></table></div>
+
+<h2>How far people get <span>· today</span></h2>
+<div class="panel scroll"><table>
+<tr><th>Step</th><th class="n">People</th><th class="n">Lost</th><th>Share of visitors</th></tr>
+<tr><td>Opened the page</td><td class='n'>9</td><td class='n muted'></td><td class='bar'><i style='width:100%'></i><span>100%</span></td></tr><tr><td>Scrolled 25%</td><td class='n'>4</td><td class='n muted'>−5</td><td class='bar'><i style='width:44%'></i><span>44%</span></td></tr><tr><td>Scrolled halfway</td><td class='n'>4</td><td class='n muted'>0</td><td class='bar'><i style='width:44%'></i><span>44%</span></td></tr><tr><td>Scrolled 75%</td><td class='n'>2</td><td class='n muted'>−2</td><td class='bar'><i style='width:22%'></i><span>22%</span></td></tr><tr><td>Reached the price</td><td class='n'>2</td><td class='n muted'>0</td><td class='bar'><i style='width:22%'></i><span>22%</span></td></tr><tr><td>Tapped “write to us”</td><td class='n'>2</td><td class='n muted'>0</td><td class='bar'><i style='width:22%'></i><span>22%</span></td></tr></table></div>
+
+<h2>Where visitors came from <span>· every label you send</span></h2>
+<div class="panel scroll"><table>
+<tr><th>utm_source</th><th>utm_medium</th><th>utm_campaign</th><th>utm_content</th>
+<th class="n">People</th><th class="n">To price</th><th class="n">Tapped</th>
+<th class="n">Conv.</th><th>Last visit</th></tr>
+<tr><td><code>(direct)</code></td><td><code>—</code></td><td><code>—</code></td><td><b>—</b></td><td class='n'>6</td><td class='n'>2</td><td class='n'>2</td><td class='n muted'>33%</td><td class='muted'>2026-08-30 12:39</td></tr><tr><td><code>ig</code></td><td><code>—</code></td><td><code>—</code></td><td><b>anna</b></td><td class='n'>2</td><td class='n'>0</td><td class='n'>0</td><td class='n muted'>0%</td><td class='muted'>2026-08-30 12:44</td></tr><tr><td><code>ig</code></td><td><code>dm</code></td><td><code>—</code></td><td><b>test</b></td><td class='n'>1</td><td class='n'>0</td><td class='n'>0</td><td class='n muted'>0%</td><td class='muted'>2026-08-30 12:07</td></tr></table></div>
+<p class="hint">Send each link with its own label, e.g.
+<code>?utm_source=ig&amp;utm_content=a7</code>, and every recipient gets their own row here —
+including whether they reached the price. Links without labels are grouped as <code>(direct)</code>.</p>
+
+<h2>Time of day <span>· Yerevan hours, all time</span></h2>
+<div class="panel"><div class="chart"><div class='hour'><i style='height:62%' title='15:00 — 5'></i><small>15</small></div><div class='hour'><i style='height:100%' title='16:00 — 8'></i><small>16</small></div></div></div>
+
+<h2>Recent taps on the Instagram button</h2>
+<div class="panel scroll"><table>
+<tr><th>When</th><th>Label</th><th>Position on page</th><th>Country</th></tr>
+<tr><td>2026-08-30 16:15</td><td><b>(no label)</b></td><td>footer</td><td>Armenia</td></tr><tr><td>2026-08-30 15:38</td><td><b>(no label)</b></td><td>footer</td><td>Armenia</td></tr></table></div>
+
+<h2>Devices</h2>
+<div class="panel scroll"><table><tr><td>unknown</td><td class='n'>9</td><td class='bar'><i style='width:100%'></i></td></tr><tr><td>desktop</td><td class='n'>2</td><td class='bar'><i style='width:22%'></i></td></tr><tr><td>mobile</td><td class='n'>2</td><td class='bar'><i style='width:22%'></i></td></tr></table></div>
+
+<h2>Countries</h2>
+<div class="panel scroll"><table><tr><td>Armenia</td><td class='n'>8</td><td class='bar'><i style='width:100%'></i></td></tr><tr><td>United States</td><td class='n'>1</td><td class='bar'><i style='width:12%'></i></td></tr></table></div>
+
+<h2>Browsers</h2>
+<div class="panel scroll"><table><tr><td>Chrome</td><td class='n'>6</td><td class='bar'><i style='width:100%'></i></td></tr><tr><td>Mobile Safari</td><td class='n'>2</td><td class='bar'><i style='width:33%'></i></td></tr><tr><td>unknown</td><td class='n'>1</td><td class='bar'><i style='width:17%'></i></td></tr><tr><td>Chrome iOS</td><td class='n'>1</td><td class='bar'><i style='width:17%'></i></td></tr></table></div>
+
+<h2>Hero slides watched</h2>
+<div class="panel scroll"><table><tr><td>Frame 1.0 — —</td><td class='n'>6</td></tr><tr><td>Frame 2.0 — —</td><td class='n'>5</td></tr><tr><td>Frame 3.0 — —</td><td class='n'>4</td></tr></table></div>
+
+<footer>
+  Source: PostHog (EU) · page: <a href="https://girly-escape-to-the-blue.aiall.uk">girly-escape-to-the-blue.aiall.uk</a><br>
+  A visitor counts as returning when their first ever event predates today.
+  “Reached the price” fires when the pricing block scrolls into view.<br>
+  This page is public to anyone holding the link — it shows aggregate numbers only, never personal data.
+</footer>
+</div></body></html>
